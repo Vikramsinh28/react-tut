@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Events from './Components/Events';
+import Lists from './Components/Lists';
+import ObjectDestruction from './Components/ObjectDestruction';
+import PropsValiFile from './Components/PropsValiFile';
+import Layout from './Routes/Layout';
+import { BrowserRouter , Route , Routes } from 'react-router-dom';
+import Blogs from './Routes/Blogs';
+import Contacts from './Routes/Contacts';
+import Home from './Routes/Home'
+import UseStAte from './Hooks/UseStAte';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        const name = "Vikramsinh"
+
+       return (
+     
+      //JSX stands for JavaScript XML.
+      //JSX allows us to write HTML in React.
+      //JSX makes it easier to write and add HTML in React.
+
+        <div className="App">
+
+          <h1>This is My First App;</h1>
+          {/* <ObjectDestruction/> */}
+
+          {/* jsx example */}
+          {/* { 5 + 5 }  */}
+    {/*    Props are arguments passed into React components.
+
+          Props are passed to components via HTML attributes. */}
+          {/* <PropsValiFile value="Ghani Badhi" name={name}/> */}
+          {/* <Events/> */}
+          {/* <Lists/> */}
+{/*           
+          <BrowserRouter>
+          <Layout/>
+          <Routes>  
+              <Route path="/" element={<Home/>}/>
+              <Route path="/blogs" element={<Blogs/>}/>
+              <Route path="/contact" element={<Contacts/>}/>
+          </Routes>
+          </BrowserRouter> */}
+
+          {/* <UseStAte/> */}
+
+        </div>
   );
 }
 
